@@ -1,0 +1,20 @@
+Task 3:-
+Using the terminal, practice navigating through directories, listing file contents, and moving files to different locations.
+
+steps:-
+
+1.Go to home directory using command **cd ~**
+
+2.Create two folders using command **mkdir new_folder1 new_folder2**.
+
+3.Create files in both the folders using command **touch new_folder1/fileA.txt new_folder2/fileB.txt.
+
+4.Navigate to the new_folder1 using command **cd new_folder1**.
+
+5.To check the contents of the current directory use command **ls**.
+
+6.Move fileA.txt by using command **mv fileA.txt ../new_folder2/** and confirm it by using command ls ../new_folder2.
+
+7.Rename the fileB.txt by using the command **mv fileB.txt remaned_file.txt.
+
+8.Now go back to home directory using command **cd ~**.
