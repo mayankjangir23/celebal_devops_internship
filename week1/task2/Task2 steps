@@ -1,0 +1,19 @@
+Task 2
+Execute basic Linux commands (e.g., ls, cd, mkdir, rm, touch) to manipulate files and directories, with an emphasis on understanding their usage
+
+Steps:-
+1. Use **ls -a** command to get the list of all the files and folders present in the current directory
+
+2. using **mkdir new_folder** create a new folder.
+
+3. using **cd new_folder** command change the current directory to **new_folder**.
+
+4. Use **touch myfile.txt** command to create a simple text file in the **new_folder**.
+
+5. Once again use **ls -a** command to get the list of all the files in the **new_folder**.
+
+6. Now, use **rm myfile.txt** command to delete the file from the **new_folder**.
+
+7. Use **cd ..** command to get to the previous directory and then use **rm -r new_folder** to delete the newly created folder.
+
+8. Lastly once again use the **ls -a** command to get the list of all the files and folders in the present directory.
