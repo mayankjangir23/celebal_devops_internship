@@ -1,0 +1,17 @@
+Steps followed-
+1. create a file using touch command:- touch myfile.txt
+2. once the file is created use command ls -l myfile.txt to get detailed information about myfile.txt
+3. you will get something like this
+4. -rw-rw-r-- 1 ubuntu ubuntu 0 May 30 11:41 myfile.txt
+here -rw-rw-r-- are the permissions
+first ubuntu is owner of the file and second ubuntu is the group that owns the file
+
+5. to change the permission use numerical values which are mapped like this:-
+r = 4, w = 2, and x = 1
+add them for combinations:- 
+  7 = rwx
+  6 = rw-
+  5 = r-x
+  4 = r--
+
+6. When done again use command ls -l myfile.txt to check the output
