@@ -1,0 +1,20 @@
+Task 7:-
+
+Setup a remote repository in Local , Add a file and commit or save the changes and push to master branch
+
+Steps:-
+1. Created a Identity using the following commands:-
+    git config --global user.name "Mayank"
+    git config --global user.email "jangidanshu184@gmail.com"
+
+2. Created a new local directory for the project using the command following commands:-
+     mkdir myproject
+     cd myproject
+
+3. Initiallized a git repository using the command **git init**
+
+4. Created a new file using the command **echo "# myfile.txt** or ** touch myfile.txt**.
+
+5. Added all the changes to the staging area using the command **git add .**
+
+6. Commited the changes using the command **git commit -m "Initial commit".
