@@ -1,0 +1,45 @@
+Containerization and Docker Fundamentals
+-----------------------------------------------------------------------------------------
+What is Containerization:-
+Containerization is the process of packaging software along with all its dependencies, libraries, and configuration files into a single unit called a container.
+This ensures that the application runs consistently across different environments.
+
+ Benefits of Containerization:-
+
+> Consistency across environments (dev, test, prod)
+
+> Lightweight and fast
+
+> Easy to scale and deploy
+
+> Better resource utilization
+------------------------------------------------------------------------------------------
+ What is Docker:-
+Docker is an open-source platform that simplifies the process of building, running, and managing containers. It allows developers to package applications into
+standardized units for software development.
+
+------------------------------------------------------------------------------------------
+Basic Docker Commands
+1. docker --version :- check installed version of docker on your system
+
+2. docker pull <image_name> :- download and image from docker hub
+
+3. docker image :- list all downloaded docker images
+
+4. docker run <image_name> :- run a container from an image
+
+5. docker ps :- list all running containers.
+
+6. docker ps -a :- list all containers (including stopped ones)
+
+7. docker stop <container_id> :- stop a running container
+
+8. docker start <container_id> :- start a stopped container
+
+9. docker rm <container_id> :- remove a container
+
+10. docker rmi <image_id> :- remove a docker image
+
+11. docker build -t <name> :- build a docker image from a dockerfile
+
+12. docker exec -it <container_id>/bin/bash :- access the shell of a running container
