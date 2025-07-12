@@ -1,0 +1,59 @@
+ Azure DevOps: Configure Dashboard & Queries for Work Items
+============================================================
+Part 1: Create a Query for Work Items
+======================================
+Queries help you filter and group work items like tasks, bugs, user stories, etc.
+
+🔹 Step 1: Go to your Azure DevOps project
+Open: https://dev.azure.com
+Select your organization and project
+
+🔹 Step 2: Navigate to Boards → Queries
+Click "Boards" on the left panel
+Select "Queries"
+Click “New Query”
+
+🔹 Step 3: Define Your Query Conditions
+Choose Work Item Type: e.g., Bug, Task, User Story
+Add conditions like:
+Assigned To = [Me]
+State = Active
+Area Path or Tags
+Choose "Flat list of work items" or "Tree of work items"
+
+🔹 Step 4: Run and Save the Query
+Click "Run Query"
+Save with a name like Active Bugs - My Team
+Choose a folder like Shared Queries if others need access
+
+Part 2: Create and Configure a Dashboard
+========================================
+🔹 Step 1: Navigate to Dashboards
+Go to Boards → Dashboards
+Click "New Dashboard"
+Set:
+Name: Team Overview or Bug Tracking
+Team: Your Azure DevOps team
+Choose visibility: Private or Team-wide
+
+🔹 Step 2: Add Widgets
+click "Add widgets", then search for:
+> Query tile
+> Chart for work items
+> sprint burndown
+> team velocity
+
+🔹 Step 3: Configure a Chart Widget
+Add "Chart for Work Items"
+Select your saved query
+Choose chart type: Pie, Column, Bar
+Configure grouping (e.g., by State, by Assigned To)
+
+ Part 3: Pin a Query to Dashboard
+=================================
+You can also pin directly from the Query tab.
+🔹 Step-by-step:
+Go to Boards → Queries
+Select a saved query
+Click "..." → Pin to Dashboard
+Choose the desired dashboard
