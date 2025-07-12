@@ -1,0 +1,36 @@
+Service Types in Kubernetes
+==========================
+
+1. ClusterIP
+============
+> default
+> Internal access within the cluster
+> No external access
+>>commands:-
+kubectl apply -f clusterip-service.yaml
+kubectl get svc
+kubectl run curlpod --image=radial/busyboxplus:curl -i --tty
+# Inside a pod
+curl clusterip-service
+
+2. NodePort
+===========
+> Exposes the service on a static port(30000-32767) on each node.
+> Accessible externally via <NodeIP>:<NodePort>
+>>commands:-
+kubectl apply -f nodeport-service.yaml
+kubectl get svc
+minikube service nodeport-service --url
+curl $(minikube service nodeport-service --url)
+
+3. LoadBalancer
+===============
+> Exposes service externally using a cloud provider's load balancer.
+> Automatically assigns an external IP
+>>commands:-
+kubectl apply -f loadbalancer-service.yaml
+kubectl get svc loadbalancer-service
+minikube tunnel  # if using Minikube
+curl http://<EXTERNAL-IP>
+
+4. 
