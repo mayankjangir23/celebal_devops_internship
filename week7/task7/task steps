@@ -1,31 +1,31 @@
-name =Apply branch policies such that only the project administrator can access the master branch; contributors cannot.
+name-Apply triggers in build and release.
 
-task steps-
-1.go to git repo
-in azure organistion,create prject , go to repo, then branches
+Trigger Type	Purpose	
+Continuous Integration (CI)	Automatically triggers a build when code is pushed to a branch.Applies To	Build Pipelines
+Scheduled Trigger	Automatically triggers builds or releases on a schedule	.Applies ToBuild & Release
+Pull Request (PR) Trigger	Automatically triggers a build on a PR creation/update.Applies To	Build Pipelines
+Continuous Deployment (CD)	Automatically triggers a release when a build completes	.Applies To Release Pipelines
 
-2.Set Branch Security (Permissions)
-Find the master branch in the list.
-Click on the … (ellipsis) next to it.
-Select Branch security
+steps-
+🔸 1️⃣ Continuous Integration (CI) Trigger
+Go to Pipelines > Pipelines
+Select your pipeline
 
-3.configure Permissions
-In the Branch Security screen:
+Click Edit
+In the Triggers tab:
+Check Enable continuous integration
+Add branch filters (if needed)
 
-Select the Contributors group
-  Set Contribute → Deny
-  Set Force Push (rewrite history and delete branches) → Deny
-Then for Project Administrators:
-  Ensure Contribute → Allow
-  Ensure Force Push (if needed) → Allow
+🔸 2️⃣ Scheduled Trigger
 
-4.Set Branch Policies for Additional Control
-Go to Repos > Branches
-Click the … (ellipses) next to master
-Select Branch policies
+In the Triggers tab
+Click + Add under Scheduled
+Set day, time, and time zone
+Set branch filter (if needed)
 
-Optionally configure:
-Require minimum number of reviewers
-Enforce merge strategy (Squash, Rebase, etc.)
-Require linked work items
-Require successful build before merge (if CI/CD integrated)
+
+🔸 3️⃣Pull Request (PR) Trigger
+
+In the Triggers tab
+Enable Build pull requests validation
+Add branch filters
