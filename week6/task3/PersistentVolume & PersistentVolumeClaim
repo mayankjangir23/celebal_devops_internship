@@ -1,0 +1,22 @@
+Waht is PV and PVC?
+===================
+PersistentVolume (PV)
+=====================
+A piece of storage in the cluster (like a disk or NFS).
+Created by admins or dynamically by the system.
+Lives independently of Pods, i.e., data persists even if pods die or restart.
+
+PersistentVolumeClaim (PVC)
+===========================
+A user request for storage (like RAM requests for CPU).
+It binds to a suitable PV (based on size, access mode, etc.)
+
+Analogy
+========
+PV → Storage room in your company building
+PVC → You asking for a room to store your documents
+When approved (bound), you get access to the room
+
+PV and PVC Architecture
+========================
+[ Pod ] --> [ PersistentVolumeClaim ] --> [ PersistentVolume ] --> [ Physical Storage (Disk, NFS, etc.) ]
